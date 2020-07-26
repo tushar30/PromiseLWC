@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Any Order">
+		<div slot="actions">
+			<lightning-button label="Any Order" onclick={anyOrder}></lightning-button>
+		</div>
+	</lightning-card>
+	<lightning-card title="Serial Promise">
+		<div slot="actions">
+			<lightning-button label="Serial Promise" onclick={promiseChain}></lightning-button>
+		</div>
+    </lightning-card>
+    <lightning-card title="All Promise">
+		<div slot="actions">
+			<lightning-button label="All Promise" onclick={allPromises}></lightning-button>
+		</div>
+    </lightning-card>
+    <lightning-card title="Race Promise">
+		<div slot="actions">
+			<lightning-button label="Race Promise" onclick={racePromises}></lightning-button>
+		</div>
+    </lightning-card>
+   <!-- <lightning-card title="Async Await">
+		<div slot="actions">
+			<lightning-button label="Async Await" onclick={serialAsyncAwait}></lightning-button>
+		</div>
+	</lightning-card> -->
+</template>
