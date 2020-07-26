@@ -119,20 +119,4 @@ export default class Lwc_Promise extends LightningElement {
 			console.log(`${JSON.stringify(result)}  Success`);
 		});
     }
-    
-    async serialAsyncAwait() {
-		console.log('\n\n Async-Await started');
-
-		let methodName;
-		try {
-			methodName = await this.promiseHelper("A");
-			console.log(`${methodName} Success`);
-			methodName = await this.promiseHelper("B");
-			console.log(`${methodName} Success`);
-			methodName = await this.promiseHelper("C");
-			console.log(`${methodName} Success`);
-		} catch (ex) {
-			console.log("Error", ex);
-		}
-	}
 }
